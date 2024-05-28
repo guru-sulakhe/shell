@@ -1,10 +1,10 @@
 #!/bin/bash
 
-NUMBER=$1
+NUMBER=$1 # passing value while running the script
 
-if[ $NUMBER -gt 20]
+if[ $NUMBER -gt 20] # gt indicates greater than
 then
     echo  "Given number $NUMBER is greater than 20"
 else
     echo "Given number $NUMBER is less than 20"
-fi
+First
