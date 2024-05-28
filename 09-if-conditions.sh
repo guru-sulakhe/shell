@@ -2,7 +2,7 @@
 
 NUMBER=$1 # passing value while running the script
 
-if[ $NUMBER -gt 20] # gt indicates greater than
+if [ $NUMBER -gt 20] 
 then
     echo  "Given number $NUMBER is greater than 20"
 else
