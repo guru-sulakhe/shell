@@ -1,5 +1,5 @@
 #!/bin/bash
-MOVIES=(Bahubali,RRR,Insterstellar)
+MOVIES=(Bahubali RRR Insterstellar)
 
 #index number always start with zero
 # index numbers are 0,1,2
