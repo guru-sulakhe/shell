@@ -32,7 +32,7 @@ do
     dnf list installed $i &>>$LOGFILE # searching for an each installed or not,if yes package installed package is shifted to LOGFILE
     if [ $? -eq 0 ] # taking response of installed package and comparing it with exit status. if it is 0 it means its already installed,or else install it.
     then
-        echo "already installed $i package,$Y skipping.. $N"
+        echo -e "already installed $i package..$Y skipping $N"
     else
         echo "$i is not installed, Need to install"
     fi
