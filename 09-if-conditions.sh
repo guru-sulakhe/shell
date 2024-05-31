@@ -8,3 +8,6 @@ then
 else
     echo "Given number $NUMBER is less than 20"
 fi
+
+# -gt means greater than, -ge means greater than and equal, -lt means less than, -le means less than and equal, -eq means equal to
+# -ne means not equal to

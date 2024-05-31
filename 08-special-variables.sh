@@ -10,3 +10,4 @@ echo "HostName : $HOSTNAME"
 echo "Proceed ID of the current shell script : $$"
 sleep 30 & # which will run in the background with 30 seconcds in order to know about the process instance id of this command ,type as ps -ef
 echo "Procees ID of the last background command: $!"
+echo "Exit Status of previous command : $?"
