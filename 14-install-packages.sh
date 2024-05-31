@@ -6,7 +6,7 @@ SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 R="\e[31m" #for red color
 G="\e[32m" #for green color
-Y="\e[33m" #for yellow color
+Y="\e[1;33m" #for yellow color
 N="\e[0m" #for normal color
 
 VALIDATE(){
@@ -28,9 +28,9 @@ fi
 
 for i in $@ # $@ represents all variables, it is important to give packages name whenever running the script
 do
-    echo "packages to install : $i"  # Here $i represents variable names given by user to install,for each iteration it will take one package to install
-    dnf list installed $i &>>$LOGFILE
-    if [ $? -eq 0 ]
+    echo "packages to install : $i"  # Here $i represents variable names given by user to install,for each iteration it will take one package and displays the message
+    dnf list installed $i &>>$LOGFILE # searching for an each installed or not,if yes package installed package is shifted to LOGFILE
+    if [ $? -eq 0 ] # taking response of installed package and comparing it with exit status. if it is 0 it means its already installed,or else install it.
     then
         echo "already installed $i package,$Y skipping.. $N"
     else
