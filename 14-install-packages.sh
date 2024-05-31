@@ -6,7 +6,7 @@ SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 R="\e[31m" #for red color
 G="\e[32m" #for green color
-Y="\033[0;33m" #for yellow color
+Y="\e[33m" #for yellow color
 N="\e[0m" #for normal color
 
 VALIDATE(){
