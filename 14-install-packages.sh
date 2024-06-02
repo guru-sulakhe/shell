@@ -12,9 +12,9 @@ N="\e[0m" #for normal color
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo "$2.. FAILED"
+        echo -e "$2.. $R FAILED $N"
     else
-        echo "$2.. SUCCESSFUL" 
+        echo -e "$2.. $G SUCCESSFUL $N" 
     fi
 }
 
@@ -34,6 +34,7 @@ do
     then
         echo -e "already installed $i package..$Y skipping $N"
     else
-        echo "$i is not installed, Need to install"
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "Installing $i" 
     fi
 done
