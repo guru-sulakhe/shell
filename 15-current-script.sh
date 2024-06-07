@@ -6,7 +6,7 @@ echo "Before calling other script, course: $COURSE"
 echo "Process ID of the current script: $$"
 
 #./16-other-script.sh it is a first way of calling other script
-source ./16-other-script.sh   #it is second way of calling other script.
+source./16-other-script.sh   #it is second way of calling other script.
 
 echo "After calling other script,course: $COURSE"
 
