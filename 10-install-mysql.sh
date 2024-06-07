@@ -13,7 +13,7 @@ else
 fi
 dnf install mysql -y
 
-if [ $? -ne 0 ]
+if [ $? -ne 0 ] # $? will represents whether the previous used command is successful or not which is known as 'exit status'.
 then
     echo "Installation of MYSQL.. is failed"
     exit 1
@@ -23,7 +23,7 @@ fi
 
 dnf install git -y
 
-if [ $? -ne 0 ]
+if [ $? -ne 0 ] 
 then
     echo "Installation of GIT.. is failed"
     exit 1
