@@ -12,4 +12,5 @@ echo "After calling other script,course: $COURSE"
 
 #NOTE:
 #while calling other script using first way:variable value after calling other script will not change,PID of two scripts are different
+# after executing this script use the command :chmod +x 15-current.sh
 #while calling other scrpt using second way:variable value after calling other script will change,PID of two scripts are same
