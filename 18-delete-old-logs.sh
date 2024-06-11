@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m" #for normal color
 if [ -d $SOURCE_DIRECTORY ]
 then
-    echo "Source directory exists"
+    echo -e "$G Source directory exists $N"
 else
     echo -e "Source directory not exists,$R please make sure that $SOURCE_DIRECTORY exists $N"
 fi
