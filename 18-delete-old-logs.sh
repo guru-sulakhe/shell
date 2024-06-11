@@ -16,6 +16,6 @@ FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
 while IFS= read -r line
 do
-    echo "Deleting file: $line
+    echo "Deleting file: $line"
     rm -rf $line
-done <<< $FILES
+done
