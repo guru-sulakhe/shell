@@ -10,7 +10,7 @@ do
     FOLDER=$(echo $line | grep xfs | awk -F " " '{print $NF}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then 
-        MESSAGE="$FOLDER is more than $DISK_THRESHOLD with a memory usage of $USAGE /n"
+        MESSAGE="$FOLDER is more than $DISK_THRESHOLD with a memory usage of $USAGE \n"
     fi
 done <<< $DISK_USAGE
 
