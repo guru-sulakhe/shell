@@ -26,7 +26,7 @@ fi
 for i in $@
 do
 echo "packages to be installed: $i" 
-dnf list installed $i &>>$LOGFILE
+dnf list installed $i &>>$LOGFILE #This will display the installed packages
 if [ $? -eq o ]
 then
     echo "$i is already installed, SKIPPING"

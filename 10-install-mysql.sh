@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(id -u)
+USERID=$(id -u) #this will check whether you are root user or non-root user
 
 if [ $USERID -ne 0 ]
 then

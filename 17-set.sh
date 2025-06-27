@@ -5,6 +5,7 @@ set -e # shell script will validate each and every command and don't show the er
 failure(){
     echo "Failed at $1 : $2"
 }
+# Here $1 refers to ${LINENO} and $2 refers to $BASH_COMMAND 
 
 trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 USERID=$(id -u)
