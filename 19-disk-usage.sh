@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# $ df -hT --> to check disk memory
+# $ free ---> to check RAM
+# $ free -m ---> to check mb of RAM
+
 DISK_USAGE=$(df -hT | grep xfs) #storing xfs disk memory
 DISK_THRESHOLD=50
 MESSAGE=""
